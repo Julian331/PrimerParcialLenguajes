@@ -1,5 +1,3 @@
----
-
 # Implementación en Haskell (Paradigma Funcional)
 
 En Haskell el algoritmo se expresa de manera **más cercana a su definición matemática** mediante funciones recursivas.
