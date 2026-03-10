@@ -1,27 +1,63 @@
-Expresión regular
+# Punto 2 – AFD para reconocimiento de identificadores
+---
+## Expresión regular
 
+La expresión regular utilizada es:
+
+```text id="x1n0e4"
 [A-Za-z][A-Za-z0-9]*
+```
 
-Esta expresión dice que son las comienzan con una letra y pueden continuar con letras o dígitos.
+Esta expresión indica que:
 
-Diseño del AFD
+* La cadena **debe comenzar con una letra** (`A-Z` o `a-z`).
+* Después del primer carácter pueden aparecer **letras o números**.
+* No se permiten símbolos especiales.
 
-El autómata tiene dos estados:
+---
 
-q0: estado inicial
+## Diseño del AFD
 
-q1: estado de aceptación
+El autómata está compuesto por **dos estados principales**:
 
-Transiciones:
+* **q0** → estado inicial
+* **q1** → estado de aceptación
 
-De q0 a q1 con cualquier letra.
+### Transiciones
 
-De q1 a q1 con letras o números.
+* De **q0 a q1** con cualquier **letra** (`A-Z` o `a-z`).
+* De **q1 a q1** con **letras o números** (`A-Z`, `a-z`, `0-9`).
 
-Si aparece cualquier otro símbolo, la cadena es rechazada.
+Si aparece **cualquier otro símbolo**, la cadena es **rechazada**.
 
-Salida Esperada:
+---
 
+## Ejemplos de prueba
+
+Las siguientes cadenas fueron evaluadas por el programa:
+
+```text id="eh02dd"
+numero
+1X
+hola
+x1
+parcial
+123
+como
+eufareix10
+1variable
+_abc
+--
+1a+2b
+a3*b3
+a3b3
+```
+
+---
+
+## Resultados obtenidos
+
+```text id="1qsjex"
 numero ACEPTADO
 1X NO ACEPTADO
 hola ACEPTADO
@@ -36,3 +72,4 @@ _abc NO ACEPTADO
 1a+2b NO ACEPTADO
 a3*b3 NO ACEPTADO
 a3b3 ACEPTADO
+```
