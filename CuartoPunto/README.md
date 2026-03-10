@@ -61,6 +61,7 @@ PRUEBAS DE VARIOS NUMEROS EN C:
 <img width="785" height="217" alt="image" src="https://github.com/user-attachments/assets/9f56e199-7190-4b5f-95a4-6f7c656be998" />
 
 ---
+
 # Comparación de Rendimiento
 
 | Lenguaje | Tiempo aproximado |
