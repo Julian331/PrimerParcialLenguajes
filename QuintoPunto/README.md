@@ -17,20 +17,6 @@ donde:
 
 ---
 
-## Serie de Maclaurin
-
-La función exponencial puede aproximarse mediante la siguiente serie infinita:
-
-[
-e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
-]
-
-En el programa se utiliza una **aproximación truncada**, es decir, se calculan únicamente los **primeros n términos de la serie**.
-
-Esto permite obtener una aproximación del valor de (e^x).
-
----
-
 ## Ejemplo de entrada
 
 Archivo `entrada.txt`:
